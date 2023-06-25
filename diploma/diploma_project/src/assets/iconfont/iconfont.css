@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3907905 */
+  src: url('iconfont.woff2?t=1679024127986') format('woff2'),
+       url('iconfont.woff?t=1679024127986') format('woff'),
+       url('iconfont.ttf?t=1679024127986') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiaxingshoucangtianchong:before {
+  content: "\e683";
+  color: rgb(255,144,0);
+}
+
+.icon-shoucang:before {
+  content: "\e666";
+}
+
+.icon-dianzan:before {
+  content: "\e616";
+}
+
+.icon-dianzan1:before {
+  content: "\e609";
+  color: pink;
+}
+
+.icon-dianzan2:before {
+  content: "\e631";
+}
+
+.icon-shuji:before {
+  content: "\e6be";
+  color: rgb(83, 173, 143);
+}
+
+.icon-yuechi:before {
+  content: "\e632";
+  color: bisque;
+}
+
+.icon-yuechi1:before {
+  content: "\e638";
+  color: rgb(255,218,131);
+}
+
+.icon-paihangbang-:before {
+  content: "\e60c";
+  color: blue;
+}
+
+.icon-paihangbang1-copy:before {
+  content: "\fb33";
+}
+
+.icon-huore1-copy:before {
+  content: "\fb31";
+  color: red;
+}
+
+.icon-huore1-copy1:before {
+  content: "\fb32";
+  color: red;
+}
+

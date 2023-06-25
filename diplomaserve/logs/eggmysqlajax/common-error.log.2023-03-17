@@ -1,0 +1,1825 @@
+2023-02-18 13:24:54,943 ERROR 19584 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 19584
+hostname: 梦
+
+2023-02-18 13:35:55,102 ERROR 23000 nodejs.unhandledRejectionError: ER_DATA_TOO_LONG: Data too long for column 'no' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into user(name,no,pwd,sex) values('\'xiao\';','\'xiaoming\';','\'123456\';','\'female\';')
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'no' at row 1"
+sqlState: "22001"
+index: 0
+sql: "insert into user(name,no,pwd,sex) values('\\'xiao\\';','\\'xiaoming\\';','\\'123456\\';','\\'female\\';')"
+name: "unhandledRejectionError"
+pid: 23000
+hostname: 梦
+
+2023-02-18 13:36:04,642 ERROR 23000 nodejs.unhandledRejectionError: ER_DATA_TOO_LONG: Data too long for column 'no' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into user(name,no,pwd,sex) values('\'xiao\';','\'xiaoming\';','\'123456\';','\'female\';')
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'no' at row 1"
+sqlState: "22001"
+index: 0
+sql: "insert into user(name,no,pwd,sex) values('\\'xiao\\';','\\'xiaoming\\';','\\'123456\\';','\\'female\\';')"
+name: "unhandledRejectionError"
+pid: 23000
+hostname: 梦
+
+2023-02-18 13:37:55,125 ERROR 23000 nodejs.unhandledRejectionError: ER_DATA_TOO_LONG: Data too long for column 'no' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into user(name,no,pwd,sex) values('\'xiao\';','\'xiaoming\';','\'123456\';','\'female\';')
+code: "ER_DATA_TOO_LONG"
+errno: 1406
+sqlMessage: "Data too long for column 'no' at row 1"
+sqlState: "22001"
+index: 0
+sql: "insert into user(name,no,pwd,sex) values('\\'xiao\\';','\\'xiaoming\\';','\\'123456\\';','\\'female\\';')"
+name: "unhandledRejectionError"
+pid: 23000
+hostname: 梦
+
+2023-02-28 14:45:43,116 ERROR 17804 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17804
+hostname: 梦
+
+2023-02-28 16:23:59,159 ERROR 17804 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17804
+hostname: 梦
+
+2023-03-01 10:20:22,201 ERROR 12784 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 12784
+hostname: 梦
+
+2023-03-01 16:43:50,620 ERROR 12784 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 12784
+hostname: 梦
+
+2023-03-08 16:17:36,508 ERROR 1464 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 1464
+hostname: 梦
+
+2023-03-08 17:26:20,998 ERROR 1464 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 1464
+hostname: 梦
+
+2023-03-15 13:54:34,887 ERROR 5116 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 5116
+hostname: 梦
+
+2023-03-15 15:31:15,051 ERROR 17372 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17372
+hostname: 梦
+
+2023-03-15 15:40:28,147 ERROR 18976 [-/::1/-/27ms POST /updateFile] nodejs.ENOENTError: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Temp\egg-multipart-tmp\eggmysqlajax\2023\03\15\15\d0a8a57a-08a9-4679-9012-9d3e24ca6733.jpg' -> 'F:\补习总文件\TheCode\Vue\diplomaserve\app/public/upload/1678866028145001.jpg'
+    at Object.copyFileSync (node:fs:2852:3)
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:32:18)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+errno: -4058
+syscall: "copyfile"
+code: "ENOENT"
+path: "C:\\Users\\admin\\AppData\\Local\\Temp\\egg-multipart-tmp\\eggmysqlajax\\2023\\03\\15\\15\\d0a8a57a-08a9-4679-9012-9d3e24ca6733.jpg"
+dest: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app/public/upload/1678866028145001.jpg"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ENOENTError"
+pid: 18976
+hostname: 梦
+
+2023-03-15 17:39:42,676 ERROR 18976 [-/::1/-/16ms POST /updateFile] nodejs.ENOENTError: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Temp\egg-multipart-tmp\eggmysqlajax\2023\03\15\17\9e3927f9-7ae0-4307-8399-8a5bb275f493.jpg' -> 'F:\补习总文件\TheCode\Vue\diplomaserve\app/public/upload/1678873182674001.jpg'
+    at Object.copyFileSync (node:fs:2852:3)
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:32:18)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+errno: -4058
+syscall: "copyfile"
+code: "ENOENT"
+path: "C:\\Users\\admin\\AppData\\Local\\Temp\\egg-multipart-tmp\\eggmysqlajax\\2023\\03\\15\\17\\9e3927f9-7ae0-4307-8399-8a5bb275f493.jpg"
+dest: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app/public/upload/1678873182674001.jpg"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ENOENTError"
+pid: 18976
+hostname: 梦
+
+2023-03-15 17:39:48,518 ERROR 17372 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17372
+hostname: 梦
+
+2023-03-15 17:41:49,876 ERROR 18092 [-/::1/-/28ms POST /updateFile] nodejs.ENOENTError: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Temp\egg-multipart-tmp\eggmysqlajax\2023\03\15\17\83dd56ec-1277-4d14-b1b5-14552018bfb1.jpg' -> 'F:\补习总文件\TheCode\Vue\diplomaserve\app/public/upload/1678873309872001.jpg'
+    at Object.copyFileSync (node:fs:2852:3)
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:32:18)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+errno: -4058
+syscall: "copyfile"
+code: "ENOENT"
+path: "C:\\Users\\admin\\AppData\\Local\\Temp\\egg-multipart-tmp\\eggmysqlajax\\2023\\03\\15\\17\\83dd56ec-1277-4d14-b1b5-14552018bfb1.jpg"
+dest: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app/public/upload/1678873309872001.jpg"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ENOENTError"
+pid: 18092
+hostname: 梦
+
+2023-03-15 18:08:11,452 ERROR 18092 [-/::1/-/11ms POST /updateFile] nodejs.ENOENTError: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Temp\egg-multipart-tmp\eggmysqlajax\2023\03\15\18\59359cdc-fbd1-4ecb-b34b-98d8e0a5f2f6.jpg' -> 'F:\补习总文件\TheCode\Vue\diplomaserve\app/public/upload/1678874891451001.jpg'
+    at Object.copyFileSync (node:fs:2852:3)
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:32:18)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+errno: -4058
+syscall: "copyfile"
+code: "ENOENT"
+path: "C:\\Users\\admin\\AppData\\Local\\Temp\\egg-multipart-tmp\\eggmysqlajax\\2023\\03\\15\\18\\59359cdc-fbd1-4ecb-b34b-98d8e0a5f2f6.jpg"
+dest: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app/public/upload/1678874891451001.jpg"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ENOENTError"
+pid: 18092
+hostname: 梦
+
+2023-03-15 18:28:34,774 ERROR 19252 [-/127.0.0.1/-/33ms POST /updateFile] nodejs.ENOENTError: ENOENT: no such file or directory, copyfile 'C:\Users\admin\AppData\Local\Temp\egg-multipart-tmp\eggmysqlajax\2023\03\15\18\bd471e17-54b5-4838-8bd7-8f20063510f4.jpg' -> 'F:\补习总文件\TheCode\Vue\diplomaserve\app/public/upload/1678876114770001.jpg'
+    at Object.copyFileSync (node:fs:2852:3)
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:32:18)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+errno: -4058
+syscall: "copyfile"
+code: "ENOENT"
+path: "C:\\Users\\admin\\AppData\\Local\\Temp\\egg-multipart-tmp\\eggmysqlajax\\2023\\03\\15\\18\\bd471e17-54b5-4838-8bd7-8f20063510f4.jpg"
+dest: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app/public/upload/1678876114770001.jpg"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ENOENTError"
+pid: 19252
+hostname: 梦
+
+2023-03-15 18:49:34,356 ERROR 19684 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (node:internal/fs/watchers:204:21)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "F:\\补习总文件\\TheCode\\Vue\\diplomaserve\\app\\public\\public"
+name: "EPERMError"
+pid: 19684
+hostname: 梦
+
+2023-03-16 10:07:20,270 ERROR 3116 [-/127.0.0.1/-/23ms POST /updateFile] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:44:51)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 3116
+hostname: 梦
+
+2023-03-16 11:24:20,026 ERROR 16556 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16556
+hostname: 梦
+
+2023-03-16 12:01:40,020 ERROR 2556 [-/::1/-/19ms POST /publish] nodejs.ReferenceError: userid is not defined
+    at ClubController.publish (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:73:62)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 2556
+hostname: 梦
+
+2023-03-16 12:04:47,584 ERROR 8808 [-/::1/-/20ms POST /publish] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '这是1输入的内容' for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values('这是1输入的内容','2022-03-25','1',NULL,NULL)
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '这是1输入的内容' for column 'userid' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values('这是1输入的内容','2022-03-25','1',NULL,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 8808
+hostname: 梦
+
+2023-03-16 12:05:25,257 ERROR 8808 [-/::1/-/4ms POST /publish] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '这是1输入的内容' for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values('这是1输入的内容','2022-03-25','1',NULL,NULL)
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '这是1输入的内容' for column 'userid' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values('这是1输入的内容','2022-03-25','1',NULL,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 8808
+hostname: 梦
+
+2023-03-16 14:36:12,763 ERROR 16556 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16556
+hostname: 梦
+
+2023-03-16 14:54:57,206 ERROR 2512 [-/127.0.0.1/-/2ms POST /updateFile] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:28:25)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 2512
+hostname: 梦
+
+2023-03-16 14:56:59,029 ERROR 2512 [-/127.0.0.1/-/0ms POST /updateFile] nodejs.TypeError: Cannot read properties of undefined (reading '0')
+    at ClubService.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\clubService.js:28:25)
+    at ClubController.updateFile (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\clubController.js:57:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 2512
+hostname: 梦
+
+2023-03-16 15:48:40,002 ERROR 17948 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17948
+hostname: 梦
+
+2023-03-16 15:55:55,282 ERROR 12884 [-/127.0.0.1/-/20ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,url,content,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfadf','2023-03-16 15:55:55','生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,url,content,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfadf','2023-03-16 15:55:55','生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 12884
+hostname: 梦
+
+2023-03-16 15:59:22,493 ERROR 10536 [-/127.0.0.1/-/18ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,url,content,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','asdfsdaaa','2023-03-16 15:59:22','全部')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,url,content,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','asdfsdaaa','2023-03-16 15:59:22','全部')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 10536
+hostname: 梦
+
+2023-03-16 16:08:03,510 ERROR 1468 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfadf','2023-03-16 16:08:03','生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfadf','2023-03-16 16:08:03','生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 1468
+hostname: 梦
+
+2023-03-16 16:09:25,011 ERROR 1468 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','这个是内容','2023-03-16 16:09:25','全部')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','这个是内容','2023-03-16 16:09:25','全部')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 1468
+hostname: 梦
+
+2023-03-16 16:11:35,623 ERROR 17800 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dafsadf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:11:35','社团/学生会')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dafsadf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:11:35','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 17800
+hostname: 梦
+
+2023-03-16 16:12:19,823 ERROR 17800 [-/127.0.0.1/-/5ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:12:19','生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:12:19','生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 17800
+hostname: 梦
+
+2023-03-16 16:13:00,964 ERROR 17800 [-/127.0.0.1/-/5ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','zshsdlge[ldcnbapr',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:13:00','生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','zshsdlge[ldcnbapr',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:13:00','生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 17800
+hostname: 梦
+
+2023-03-16 16:15:31,317 ERROR 17800 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfsadsa',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:15:31','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfsadsa',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:15:31','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 17800
+hostname: 梦
+
+2023-03-16 16:17:24,638 ERROR 17800 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfadfagafgad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:17:24','毕业/就业')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfadfagafgad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:17:24','毕业/就业')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 17800
+hostname: 梦
+
+2023-03-16 16:19:11,250 ERROR 4800 [-/127.0.0.1/-/20ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','adfaesdafgdas',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:19:11','日常生活')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','adfaesdafgdas',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:19:11','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:19:16,584 ERROR 4800 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/167895474765101' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/1678954747651010.jpg','2023-03-16 16:19:16','日常生活')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/167895474765101' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/1678954747651010.jpg','2023-03-16 16:19:16','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:19:23,333 ERROR 4800 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/167895474765101' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/1678954747651010.jpg','2023-03-16 16:19:23','社团/学生会')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/167895474765101' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'adfaesdafgdas','http://localhost:8000/public/upload/1678954747651010.jpg','2023-03-16 16:19:23','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:23:33,619 ERROR 4800 [-/127.0.0.1/-/4ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','我是最帅的',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:23:33','社团/学生会')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','我是最帅的',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:23:33','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:23:37,110 ERROR 4800 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666002.png','2023-03-16 16:23:37','社团/学生会')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666002.png','2023-03-16 16:23:37','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:23:39,485 ERROR 4800 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666002.png','2023-03-16 16:23:39','社团/学生会')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'我是最帅的','http://localhost:8000/public/upload/1678955005666002.png','2023-03-16 16:23:39','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:24:04,988 ERROR 4800 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','asdfsdfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:24:04','社团/学生会')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','asdfsdfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:24:04','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:24:06,990 ERROR 4800 [-/127.0.0.1/-/4ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.pn' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.png','2023-03-16 16:24:06','日常生活')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.pn' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.png','2023-03-16 16:24:06','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:24:14,965 ERROR 4800 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.pn' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.png','2023-03-16 16:24:14','毕业/就业')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.pn' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into works (1) values(1,'asdfsdfad','http://localhost:8000/public/upload/1678955038526003.png','2023-03-16 16:24:14','毕业/就业')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4800
+hostname: 梦
+
+2023-03-16 16:25:39,432 ERROR 7084 [-/127.0.0.1/-/5ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:25:39','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:25:39','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 7084
+hostname: 梦
+
+2023-03-16 16:26:06,688 ERROR 7084 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dafadf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:26:06','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','dafadf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:26:06','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 7084
+hostname: 梦
+
+2023-03-16 16:26:39,467 ERROR 7084 [-/127.0.0.1/-/2ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:26:39','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sadfad',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-16 16:26:39','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 7084
+hostname: 梦
+
+2023-03-16 17:12:29,088 ERROR 16656 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16656
+hostname: 梦
+
+2023-03-16 18:25:16,578 ERROR 1900 [-/127.0.0.1/-/4ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(1,'今天星期四','http://localhost:8000/public/upload/1678962302336003.png',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(1,'今天星期四','http://localhost:8000/public/upload/1678962302336003.png',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 1900
+hostname: 梦
+
+2023-03-16 18:25:20,421 ERROR 1900 [-/127.0.0.1/-/3ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(1,'今天星期四','http://localhost:8000/public/upload/1678962302336003.png',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(1,'今天星期四','http://localhost:8000/public/upload/1678962302336003.png',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 1900
+hostname: 梦
+
+2023-03-16 19:45:26,878 ERROR 16220 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16220
+hostname: 梦
+
+2023-03-17 10:13:31,921 ERROR 12104 [-/127.0.0.1/-/26ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:13:31','社团/学生会')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:13:31','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 12104
+hostname: 梦
+
+2023-03-17 10:13:37,657 ERROR 12104 [-/127.0.0.1/-/4ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:13:37','社团/学生会')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','sdfasdf',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:13:37','社团/学生会')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 12104
+hostname: 梦
+
+2023-03-17 10:16:59,130 ERROR 12104 [-/127.0.0.1/-/4ms POST /publish] nodejs.ER_WRONG_VALUE_COUNT_ON_ROWError: ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','skdjfnapidnpa;rr',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:16:59','日常生活')
+code: "ER_WRONG_VALUE_COUNT_ON_ROW"
+errno: 1136
+sqlMessage: "Column count doesn't match value count at row 1"
+sqlState: "21S01"
+index: 0
+sql: "insert into works (userid,content,url,time,workstype) values(`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','skdjfnapidnpa;rr',`__v_isShallow` = false, `__v_isRef` = true, `_rawValue` = '', `_value` = '','2023-03-17 10:16:59','日常生活')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_WRONG_VALUE_COUNT_ON_ROWError"
+pid: 12104
+hostname: 梦
+
+2023-03-17 10:57:38,081 ERROR 8900 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8900
+hostname: 梦
+
+2023-03-17 10:58:44,041 ERROR 6500 [-/::1/-/3ms GET /hottop] nodejs.TypeError: this.ctx.service.worksService.gottop is not a function
+    at WorksController.hottop (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:26:50)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 6500
+hostname: 梦
+
+2023-03-17 11:58:09,864 ERROR 8900 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 8900
+hostname: 梦
+
+2023-03-17 12:10:39,258 ERROR 11592 [-/::1/-/24ms POST /getgood] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679026239234, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = '9pT7XS852GsmY3Kh', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679026239234, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = '9pT7XS852GsmY3Kh', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 11592
+hostname: 梦
+
+2023-03-17 12:13:20,831 ERROR 16892 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 16892
+hostname: 梦
+
+2023-03-17 12:14:06,994 ERROR 17352 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 17352
+hostname: 梦
+
+2023-03-17 12:14:26,276 ERROR 17352 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 17352
+hostname: 梦
+
+2023-03-17 12:14:29,682 ERROR 17352 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 17352
+hostname: 梦
+
+2023-03-17 12:17:04,543 ERROR 18336 [-/::1/-/18ms POST /good] nodejs.TypeError: Cannot read properties of undefined (reading 'length')
+    at WorksController.good (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:35:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-bodyparser\index.js:95:5)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-static-cache\index.js:39:63
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18336
+hostname: 梦
+
+2023-03-17 13:40:42,484 ERROR 18228 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 18228
+hostname: 梦
+
+2023-03-17 13:42:01,337 ERROR 17944 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 17944
+hostname: 梦
+
+2023-03-17 13:42:23,899 ERROR 3700 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('1,','2')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('1,','2')"
+name: "unhandledRejectionError"
+pid: 3700
+hostname: 梦
+
+2023-03-17 13:47:14,134 ERROR 9412 [-/::1/-/30ms POST /getgood] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032034103, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = 'nbbeKnLoc3PoTOXd', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032034103, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = 'nbbeKnLoc3PoTOXd', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 9412
+hostname: 梦
+
+2023-03-17 13:49:22,454 ERROR 7224 [-/::1/-/36ms POST /getgood] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032162418, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = 'ZNmjNBXL2AD9l8W4', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032162418, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = 'ZNmjNBXL2AD9l8W4', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 7224
+hostname: 梦
+
+2023-03-17 13:52:29,745 ERROR 5592 [-/::1/-/36ms POST /getgood] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032349709, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = '1Fhu6_IWnm1NwyrL', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, ' at line 1"
+sqlState: "42000"
+index: 0
+sql: "insert into good (userid,workid) values(`request` = '[object Object]', `response` = '[object Object]', `app` = '[object Object]', `req` = '[object Object]', `res` = '[object Object]', `originalUrl` = '/getgood', `starttime` = 1679032349709, `matched` = '[object Object]', `captures` = , `params` = '[object Object]', `routerName` = NULL, `_matchedRouteName` = NULL, `routerPath` = '/getgood', `_matchedRoute` = '/getgood', `securityOptions` = '[object Object]', `nonce` = '1Fhu6_IWnm1NwyrL', `csrf` = '', `acceptJSONP` = false, `locale` = 'en-us', `view` = '[object Object]', `cookies` = '[object Object]', `httpclient` = '[object Object]', `router` = '[object Object]', `helper` = '[object Object]', `logger` = '[object Object]', `coreLogger` = '[object Object]', `locals` = '[object Object]', `state` = '[object Object]', `acceptJSON` = false, `queries` = '[object Object]', `accept` = '[object Object]', `ip` = '::1', `realStatus` = 404, `status` = 404, `message` = 'Not Found', `body` = NULL, `length` = NULL, `type` = '', `lastModified` = NULL, `etag` = '', `headerSent` = false, `writable` = true, `querystring` = '', `idempotent` = false, `socket` = '[object Object]', `search` = '', `method` = 'POST', `query` = '[object Object]', `path` = '/getgood', `url` = '/getgood', `origin` = 'http://localhost:8000', `href` = 'http://localhost:8000/getgood', `subdomains` = , `protocol` = 'http', `host` = 'localhost:8000', `hostname` = 'localhost', `URL` = 'http://localhost:8000/getgood', `header` = '[object Object]', `headers` = '[object Object]', `secure` = false, `stale` = true, `fresh` = false, `ips` = ,NULL)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 5592
+hostname: 梦
+
+2023-03-17 13:58:10,242 ERROR 17840 nodejs.unhandledRejectionError: WARN_DATA_TRUNCATED: Data truncated for column 'userid' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values('2;','3')
+code: "WARN_DATA_TRUNCATED"
+errno: 1265
+sqlMessage: "Data truncated for column 'userid' at row 1"
+sqlState: "01000"
+index: 0
+sql: "insert into good (userid,workid) values('2;','3')"
+name: "unhandledRejectionError"
+pid: 17840
+hostname: 梦
+
+2023-03-17 16:23:00,607 ERROR 9724 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 9724
+hostname: 梦
+
+2023-03-17 16:28:58,972 ERROR 1336 nodejs.TypeError: Cannot read properties of undefined (reading 'getgood')
+    at WorksController.getcollection (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:86:51)
+    at WorksController.collection (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:77:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-bodyparser\index.js:95:5)
+
+pid: 1336
+hostname: 梦
+
+2023-03-17 16:29:00,753 ERROR 1336 nodejs.TypeError: Cannot read properties of undefined (reading 'getgood')
+    at WorksController.getcollection (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:86:51)
+    at WorksController.collection (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:77:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-bodyparser\index.js:95:5)
+
+pid: 1336
+hostname: 梦
+

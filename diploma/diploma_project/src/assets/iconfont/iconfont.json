@@ -1,0 +1,93 @@
+{
+  "id": "3907905",
+  "name": "diploma",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "毕业设计使用",
+  "glyphs": [
+    {
+      "icon_id": "145710",
+      "name": "加星收藏_填充",
+      "font_class": "jiaxingshoucangtianchong",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "658040",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "706841",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1221242",
+      "name": "点赞",
+      "font_class": "dianzan1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6334468",
+      "name": "点赞",
+      "font_class": "dianzan2",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "5483232",
+      "name": "书籍",
+      "font_class": "shuji",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "16326748",
+      "name": "钥匙",
+      "font_class": "yuechi",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "33438764",
+      "name": "钥匙",
+      "font_class": "yuechi1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "11428232",
+      "name": "排行榜-01",
+      "font_class": "paihangbang-",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "34205871",
+      "name": "排行榜-copy",
+      "font_class": "paihangbang1-copy",
+      "unicode": "fb33",
+      "unicode_decimal": 64307
+    },
+    {
+      "icon_id": "34205839",
+      "name": "火热-copy",
+      "font_class": "huore1-copy",
+      "unicode": "fb31",
+      "unicode_decimal": 64305
+    },
+    {
+      "icon_id": "34205844",
+      "name": "火热-copy",
+      "font_class": "huore1-copy1",
+      "unicode": "fb32",
+      "unicode_decimal": 64306
+    }
+  ]
+}

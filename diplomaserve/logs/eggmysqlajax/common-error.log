@@ -1,0 +1,2268 @@
+2023-03-22 11:48:31,076 ERROR 17668 [-/::1/-/4ms GET /getmsgbyuserid?userid=1] nodejs.ReferenceError: Cannot access 'userid' before initialization
+    at TestController.getmsgbyuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:80:30)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 17668
+hostname: 梦
+
+2023-03-22 12:02:47,053 ERROR 3932 [-/127.0.0.1/-/2ms GET /getmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from club where type =?
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from club where type =?"
+name: "ER_PARSE_ERRORError"
+pid: 3932
+hostname: 梦
+
+2023-03-22 12:03:09,503 ERROR 3932 [-/127.0.0.1/-/2ms GET /getmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from club where type =?
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from club where type =?"
+name: "ER_PARSE_ERRORError"
+pid: 3932
+hostname: 梦
+
+2023-03-22 12:03:12,821 ERROR 3932 [-/127.0.0.1/-/1ms GET /getmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from club where type =?
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from club where type =?"
+name: "ER_PARSE_ERRORError"
+pid: 3932
+hostname: 梦
+
+2023-03-22 14:01:22,364 ERROR 6920 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6920
+hostname: 梦
+
+2023-03-22 15:23:22,257 ERROR 6920 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6920
+hostname: 梦
+
+2023-03-22 16:05:00,928 ERROR 6920 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 6920
+hostname: 梦
+
+2023-03-23 10:42:59,753 ERROR 18820 [-/127.0.0.1/-/14ms POST /updateHeadimg] nodejs.TypeError: this.ctx.service.clubService.updateHeadimg is not a function
+    at TestController.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:111:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18820
+hostname: 梦
+
+2023-03-23 10:43:47,170 ERROR 5372 [-/127.0.0.1/-/15ms POST /updateHeadimg] nodejs.ReferenceError: path is not defined
+    at UserService.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\userService.js:68:18)
+    at TestController.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:111:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 5372
+hostname: 梦
+
+2023-03-23 10:46:28,470 ERROR 5372 [-/127.0.0.1/-/6ms POST /updateHeadimg] nodejs.ReferenceError: path is not defined
+    at UserService.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\userService.js:68:18)
+    at TestController.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:111:54)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 5372
+hostname: 梦
+
+2023-03-23 11:46:03,360 ERROR 19012 [-/127.0.0.1/-/20ms POST /updateHeadimg] nodejs.ReferenceError: userid is not defined
+    at TestController.updateHeadimg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:114:26)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:50
+    at async xframe (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xframe.js:7:5)
+    at async xssProtection (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\xssProtection.js:7:5)
+    at async nosniff (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\nosniff.js:8:5)
+    at async noopen (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-security\lib\middlewares\noopen.js:8:5)
+    at async session (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-session\index.js:41:7)
+    at async bodyParser (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-bodyparser\index.js:95:5)
+    at async F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-static-cache\index.js:39:63
+    at async notfound (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg\app\middleware\notfound.js:5:5)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 19012
+hostname: 梦
+
+2023-03-23 12:26:21,224 ERROR 5064 [-/127.0.0.1/-/5ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:14)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 5064
+hostname: 梦
+
+2023-03-23 12:27:13,320 ERROR 15724 [-/127.0.0.1/-/4ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 15724
+hostname: 梦
+
+2023-03-23 12:27:51,421 ERROR 10804 [-/127.0.0.1/-/6ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 10804
+hostname: 梦
+
+2023-03-23 12:34:56,730 ERROR 3492 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3492
+hostname: 梦
+
+2023-03-23 12:36:13,934 ERROR 18636 [-/127.0.0.1/-/6ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 18636
+hostname: 梦
+
+2023-03-23 12:37:03,088 ERROR 11324 [-/127.0.0.1/-/1ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 11324
+hostname: 梦
+
+2023-03-23 12:38:18,581 ERROR 14892 [-/127.0.0.1/-/6ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 14892
+hostname: 梦
+
+2023-03-23 12:38:45,065 ERROR 14892 [-/127.0.0.1/-/5ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 14892
+hostname: 梦
+
+2023-03-23 12:42:00,607 ERROR 11468 [-/127.0.0.1/-/6ms GET /getuserid?userid=1] nodejs.TypeError: Assignment to constant variable.
+    at TestController.getuserid (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\userController.js:125:13)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:36:12
+
+pid: 11468
+hostname: 梦
+
+2023-03-23 13:40:14,403 ERROR 3492 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3492
+hostname: 梦
+
+2023-03-24 12:08:20,812 ERROR 15144 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15144
+hostname: 梦
+
+2023-03-24 12:41:09,032 ERROR 18060 [-/::1/-/5ms GET /getworkstypemsg?type=%E7%A4%BE%E5%9B%A2%2F%E5%AD%A6%E7%94%9F%E4%BC%9A] nodejs.ReferenceError: type is not defined
+    at WorksService.getworkstypemsg (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\worksService.js:21:59)
+    at WorksController.getworkstypemsg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:32:50)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18060
+hostname: 梦
+
+2023-03-24 12:41:42,562 ERROR 18060 [-/::1/-/3ms GET /getworkstypemsg?type=%27%E7%A4%BE%E5%9B%A2%2F%E5%AD%A6%E7%94%9F%E4%BC%9A%27] nodejs.ReferenceError: type is not defined
+    at WorksService.getworkstypemsg (F:\补习总文件\TheCode\Vue\diplomaserve\app\service\worksService.js:21:59)
+    at WorksController.getworkstypemsg (F:\补习总文件\TheCode\Vue\diplomaserve\app\controller\worksController.js:32:50)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+    at next (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:45:18)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\@eggjs\router\lib\router.js:186:18
+    at dispatch (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\koa-compose\index.js:44:32)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 18060
+hostname: 梦
+
+2023-03-24 13:02:23,464 ERROR 5252 [-/::1/-/7ms GET /getsearchmsg?searchmsg=3] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'3'%' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like %'3'%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'3'%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like %'3'%"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 5252
+hostname: 梦
+
+2023-03-24 13:09:03,985 ERROR 4352 [-/::1/-/7ms GET /getsearchmsg?seachmsg=a] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '%?%' in 'where clause'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like `%?%`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '%?%' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from works where content like `%?%`"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 4352
+hostname: 梦
+
+2023-03-24 13:13:12,806 ERROR 10096 [-/::1/-/6ms GET /getsearchmsg?seachmsg=a] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '%?%' in 'where clause'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like `%?%`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '%?%' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from works where content like `%?%`"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 10096
+hostname: 梦
+
+2023-03-24 13:14:51,007 ERROR 18148 [-/::1/-/6ms GET /getsearchmsg?seachmsg=%EF%BC%9F] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like %?%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like %?%"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 18148
+hostname: 梦
+
+2023-03-24 13:15:29,486 ERROR 18148 [-/::1/-/4ms GET /getsearchmsg?seachmsg=%EF%BC%9F] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like %?%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like %?%"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 18148
+hostname: 梦
+
+2023-03-24 13:15:54,122 ERROR 9392 [-/::1/-/7ms GET /getsearchmsg?seachmsg=a] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like %?%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like %?%"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 9392
+hostname: 梦
+
+2023-03-24 13:16:20,991 ERROR 17676 [-/::1/-/6ms GET /getsearchmsg?seachmsg=a] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?%' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like ?%
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?%' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like ?%"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 17676
+hostname: 梦
+
+2023-03-24 13:21:30,922 ERROR 5096 [-/::1/-/8ms GET /getsearchmsg?seachmsg=a] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%)' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like (%?%)
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%?%)' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from works where content like (%?%)"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 5096
+hostname: 梦
+
+2023-03-24 13:26:55,331 ERROR 18304 [-/::1/-/7ms GET /getsearchmsg?seachmsg=a] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '%?%' in 'where clause'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like `%?%`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '%?%' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from works where content like `%?%`"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 18304
+hostname: 梦
+
+2023-03-24 13:27:45,118 ERROR 12420 [-/::1/-/7ms GET /getsearchmsg?seachmsg=a] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column '%${?}%' in 'where clause'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from works where content like `%${?}%`
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column '%${?}%' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "select * from works where content like `%${?}%`"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 12420
+hostname: 梦
+
+2023-03-25 14:23:04,956 ERROR 3184 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 3184
+hostname: 梦
+
+2023-03-25 14:29:33,892 ERROR 6412 [-/::1/-/29ms POST /user1request] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'user1' in 'field list'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into request (user1,user2) values('1','2')
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'user1' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "insert into request (user1,user2) values('1','2')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 6412
+hostname: 梦
+
+2023-03-25 15:38:52,035 ERROR 17540 [-/127.0.0.1/-/4ms GET /getpmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from user where clubtype = ? and clubbosstype = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from user where clubtype = ? and clubbosstype = 2"
+name: "ER_PARSE_ERRORError"
+pid: 17540
+hostname: 梦
+
+2023-03-25 15:39:23,870 ERROR 17540 [-/127.0.0.1/-/2ms GET /getpmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from user where clubtype = ? and clubbosstype = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from user where clubtype = ? and clubbosstype = 2"
+name: "ER_PARSE_ERRORError"
+pid: 17540
+hostname: 梦
+
+2023-03-25 15:39:27,811 ERROR 17540 [-/127.0.0.1/-/4ms GET /getpmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from user where clubtype = ? and clubbosstype = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from user where clubtype = ? and clubbosstype = 2"
+name: "ER_PARSE_ERRORError"
+pid: 17540
+hostname: 梦
+
+2023-03-25 15:39:46,605 ERROR 17540 [-/127.0.0.1/-/3ms GET /getpmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from user where clubtype = ? and clubbosstype = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from user where clubtype = ? and clubbosstype = 2"
+name: "ER_PARSE_ERRORError"
+pid: 17540
+hostname: 梦
+
+2023-03-25 15:39:51,636 ERROR 17540 [-/127.0.0.1/-/3ms GET /getpmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from user where clubtype = ? and clubbosstype = 2
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and clubbosstype = 2' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from user where clubtype = ? and clubbosstype = 2"
+name: "ER_PARSE_ERRORError"
+pid: 17540
+hostname: 梦
+
+2023-03-25 17:16:34,646 ERROR 16712 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16712
+hostname: 梦
+
+2023-03-25 19:19:03,514 ERROR 16712 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 16712
+hostname: 梦
+
+2023-03-25 19:29:24,596 ERROR 18708 [-/127.0.0.1/-/2ms POST /updateagreetype] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'type' in 'field list'
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: update user set type = 1 where id = 10
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'type' in 'field list'"
+sqlState: "42S22"
+index: 0
+sql: "update user set type = 1 where id = 10"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 18708
+hostname: 梦
+
+2023-03-29 14:45:02,769 ERROR 13684 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13684
+hostname: 梦
+
+2023-03-29 14:58:19,845 ERROR 14708 [-/127.0.0.1/-/2ms GET /getmsgtome] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from request where userid2 = ? and type = 0
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from request where userid2 = ? and type = 0"
+name: "ER_PARSE_ERRORError"
+pid: 14708
+hostname: 梦
+
+2023-03-29 15:02:50,796 ERROR 14708 [-/127.0.0.1/-/2ms GET /getmsgtome] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from request where userid2 = ? and type = 0
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from request where userid2 = ? and type = 0"
+name: "ER_PARSE_ERRORError"
+pid: 14708
+hostname: 梦
+
+2023-03-29 15:05:27,131 ERROR 14708 [-/127.0.0.1/-/2ms GET /getmsgtome] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from request where userid2 = ? and type = 0
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from request where userid2 = ? and type = 0"
+name: "ER_PARSE_ERRORError"
+pid: 14708
+hostname: 梦
+
+2023-03-29 15:08:33,651 ERROR 14708 [-/127.0.0.1/-/2ms GET /getmsgtome] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from request where userid2 = ? and type = 0
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and type = 0' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from request where userid2 = ? and type = 0"
+name: "ER_PARSE_ERRORError"
+pid: 14708
+hostname: 梦
+
+2023-03-29 16:03:36,985 ERROR 13684 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13684
+hostname: 梦
+
+2023-03-29 17:06:12,737 ERROR 13684 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13684
+hostname: 梦
+
+2023-03-29 17:07:19,379 ERROR 17780 [-/127.0.0.1/-/11ms GET /hottop] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? order by goodnum desc,collectionnum desc limit 3' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: SELECT * from works  left join good on works.id = good.workid and good.userid = ? order by goodnum desc,collectionnum desc limit 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? order by goodnum desc,collectionnum desc limit 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT * from works  left join good on works.id = good.workid and good.userid = ? order by goodnum desc,collectionnum desc limit 3"
+name: "ER_PARSE_ERRORError"
+pid: 17780
+hostname: 梦
+
+2023-03-29 17:10:53,037 ERROR 17772 [-/127.0.0.1/-/4ms GET /hottop] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid order by goodnum desc,collectionnum desc limit 3' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: SELECT * from works  left join good on good.userid = ? and works.id = good.workid order by goodnum desc,collectionnum desc limit 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid order by goodnum desc,collectionnum desc limit 3' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT * from works  left join good on good.userid = ? and works.id = good.workid order by goodnum desc,collectionnum desc limit 3"
+name: "ER_PARSE_ERRORError"
+pid: 17772
+hostname: 梦
+
+2023-03-29 17:12:28,267 ERROR 18484 [-/127.0.0.1/-/10ms GET /hottop] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid 
+        order by goodnum desc,collectionnum desc l' at line 1
+        order by goodnum desc,collectionnum desc l' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: SELECT * from works  
+        left join good 
+        on good.userid = ? and works.id = good.workid 
+        order by goodnum desc,collectionnum desc limit 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid \n        order by goodnum desc,collectionnum desc l' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT * from works  \n        left join good \n        on good.userid = ? and works.id = good.workid \n        order by goodnum desc,collectionnum desc limit 3"
+name: "ER_PARSE_ERRORError"
+pid: 18484
+hostname: 梦
+
+2023-03-29 17:12:44,645 ERROR 18484 [-/127.0.0.1/-/3ms GET /hottop] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid 
+        order by goodnum desc,collectionnum desc l' at line 1
+        order by goodnum desc,collectionnum desc l' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: SELECT * from works  
+        left join good 
+        on good.userid = ? and works.id = good.workid 
+        order by goodnum desc,collectionnum desc limit 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and works.id = good.workid \n        order by goodnum desc,collectionnum desc l' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT * from works  \n        left join good \n        on good.userid = ? and works.id = good.workid \n        order by goodnum desc,collectionnum desc limit 3"
+name: "ER_PARSE_ERRORError"
+pid: 18484
+hostname: 梦
+
+2023-03-29 17:19:41,120 ERROR 18484 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 18484
+hostname: 梦
+
+2023-03-29 17:21:50,583 ERROR 18484 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 18484
+hostname: 梦
+
+2023-03-29 17:23:47,222 ERROR 18484 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 18484
+hostname: 梦
+
+2023-03-29 17:57:50,405 ERROR 18756 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 18756
+hostname: 梦
+
+2023-03-29 18:10:52,048 ERROR 13684 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 13684
+hostname: 梦
+
+2023-03-29 19:04:35,440 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:04:35,935 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:10:33,036 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:10:37,483 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:11:24,038 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:11:27,676 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:11:30,989 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:11:43,691 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:11:52,308 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:12:54,613 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:13:24,764 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:13:34,619 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:13:44,837 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-03-29 19:14:19,953 ERROR 17684 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 17684
+hostname: 梦
+
+2023-04-03 10:00:06,671 ERROR 4868 [-/::1/-/6ms GET /hottop?userid=1] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'works.id as worksid  from works 
+        left  join good 
+        on good.userid' at line 1
+        left  join good 
+        on good.userid' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: SELECT *,good.workid as goodworkid,collection.workid as collectionworkid,,works.id as worksid  from works 
+        left  join good 
+        on good.userid = '1' and works.id = good.workid 
+	    left join collection
+	    on collection.userid = '1' and works.id = collection.workid
+        order by goodnum desc,collectionnum desc limit 3
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'works.id as worksid  from works \n        left  join good \n        on good.userid' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT *,good.workid as goodworkid,collection.workid as collectionworkid,,works.id as worksid  from works \n        left  join good \n        on good.userid = '1' and works.id = good.workid \n\t    left join collection\n\t    on collection.userid = '1' and works.id = collection.workid\n        order by goodnum desc,collectionnum desc limit 3"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 4868
+hostname: 梦
+
+2023-04-03 10:03:45,734 ERROR 5396 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 5396
+hostname: 梦
+
+2023-04-03 10:03:46,699 ERROR 5396 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 5396
+hostname: 梦
+
+2023-04-03 10:03:47,639 ERROR 5396 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 5396
+hostname: 梦
+
+2023-04-03 10:03:49,108 ERROR 5396 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 5396
+hostname: 梦
+
+2023-04-03 10:03:49,940 ERROR 5396 nodejs.unhandledRejectionError: ER_BAD_NULL_ERROR: Column 'workid' cannot be null
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into good (userid,workid) values(1,NULL)
+code: "ER_BAD_NULL_ERROR"
+errno: 1048
+sqlMessage: "Column 'workid' cannot be null"
+sqlState: "23000"
+index: 0
+sql: "insert into good (userid,workid) values(1,NULL)"
+name: "unhandledRejectionError"
+pid: 5396
+hostname: 梦
+
+2023-04-03 10:50:48,003 ERROR 15608 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+errno: -4077
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 15608
+hostname: 梦
+
+2023-04-03 14:06:26,319 ERROR 16452 [-/127.0.0.1/-/18ms POST /user1request] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'userid1' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into request (userid1,userid2,club,name,clubtype) values('','','志愿者部门','','4')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '' for column 'userid1' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into request (userid1,userid2,club,name,clubtype) values('','','志愿者部门','','4')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 16452
+hostname: 梦
+
+2023-04-03 14:06:27,128 ERROR 16452 [-/127.0.0.1/-/2ms POST /user1request] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'userid1' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into request (userid1,userid2,club,name,clubtype) values('','','志愿者部门','','4')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '' for column 'userid1' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into request (userid1,userid2,club,name,clubtype) values('','','志愿者部门','','4')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 16452
+hostname: 梦
+
+2023-04-10 14:48:55,953 ERROR 18912 [-/127.0.0.1/-/3ms GET /getmsgbyclubtype] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: select * from club where type =?
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1"
+sqlState: "42000"
+index: 0
+sql: "select * from club where type =?"
+name: "ER_PARSE_ERRORError"
+pid: 18912
+hostname: 梦
+
+2023-04-17 16:36:35,174 ERROR 3860 [-/127.0.0.1/-/3ms POST /user1request] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'userid1' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into request (userid1,userid2,club,name,clubtype) values('',31,'体育部','','1')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '' for column 'userid1' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into request (userid1,userid2,club,name,clubtype) values('',31,'体育部','','1')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 3860
+hostname: 梦
+
+2023-05-03 15:22:04,905 ERROR 19324 [-/127.0.0.1/-/25ms POST /user1request] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '' for column 'userid1' at row 1
+    at Query.Sequence._packetToError (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    --------------------
+    at Pool.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\mysql\lib\Pool.js:199:23)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:65:19)
+    at F:\补习总文件\TheCode\Vue\diplomaserve\node_modules\co\index.js:54:5
+    sql: insert into request (userid1,userid2,club,name,clubtype) values('',31,'体育部','','1')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '' for column 'userid1' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "insert into request (userid1,userid2,club,name,clubtype) values('',31,'体育部','','1')"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 19324
+hostname: 梦
+
